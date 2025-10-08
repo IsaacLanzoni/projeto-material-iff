@@ -18,7 +18,7 @@ function redirect(n){
             window.location.href = "../disciplines/disciplines.html";
         }, 3000);   
     } else if(n == 3){
-        window.open("https://github.com/IsaacLanzoni", '_blank');
+        window.open("https://github.com/IsaacLanzoni/projeto-material-iff", '_blank');
     } else if(n == 4){
         showLoading();
         setTimeout(() => {
