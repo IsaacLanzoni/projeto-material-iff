@@ -69,7 +69,8 @@
     <main>
         <div id="disciplines_content">
             <ul class="discipline-items">
-                <li class="discipline-item">
+                
+                <li class="discipline-item" onclick="openLessons('Banco de Dados I')">
                     <a href="#">
                         <i class="fa-solid fa-cubes fa-xl"></i>
                         <span class="discipline-item-description">
@@ -78,7 +79,7 @@
                     </a>
                 </li>
 
-                <li class="discipline-item">
+                <li class="discipline-item" onclick="openLessons('Desenvolvimento Web I')">
                     <a href="#">
                         <i class="fa-solid fa-laptop-code fa-xl"></i>
                         <span class="discipline-item-description">
@@ -87,7 +88,9 @@
                     </a>
                 </li>
 
-                <li class="discipline-item">
+                
+
+                <li class="discipline-item" onclick="openLessons('Gestão Financeira e Contábil')">
                     <a href="#">
                         <i class="fa-solid fa-money-bill-trend-up fa-xl"></i>
                         <span class="discipline-item-description">
@@ -96,7 +99,7 @@
                     </a>
                 </li>
 
-                <li class="discipline-item">
+                <li class="discipline-item" onclick="openLessons('Programação Orientada a Objetos II')">
                     <a href="#">
                        <i class="fa-solid fa-diagram-project fa-xl"></i>
                         <span class="discipline-item-description">
@@ -105,7 +108,7 @@
                     </a>
                 </li>
 
-                <li class="discipline-item">
+                <li class="discipline-item" onclick="openLessons('Probabilidade e Estatística')">
                     <a href="#">
                         <i class="fa-solid fa-chart-line fa-2xl"></i>
                         <span class="discipline-item-description">
@@ -114,7 +117,7 @@
                     </a>
                 </li>
 
-                <li class="discipline-item">
+                <li class="discipline-item" onclick="openLessons('Sistemas Operacionais')">
                     <a href="#">
                         <i class="fa-brands fa-linux fa-2xl"></i>
                         <span class="discipline-item-description">
@@ -122,6 +125,15 @@
                         </span>
                     </a>
                 </li>
+
+                <div class="lessons-card">
+                    <h2>Nome Da Disciplina</h2>
+                    <button class="cancel-button" onclick="closeLessons()">
+                        <i class="fa-solid fa-xmark fa-2xl" style="color: #c32c2c;"></i>
+                    </button>
+                    <div class="lessons-grid">
+                    </div>
+                </div>
             </ul>
         </div>
     </main>

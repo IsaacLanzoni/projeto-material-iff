@@ -57,6 +57,11 @@ body{
     box-shadow: 0px 0px 2px 0px var(--cor0);
 }
 
+.discipline-item:active {
+    transform: scale(0.85);
+    transition: transform 0.75 ease;
+}
+
 .discipline-item:hover{
     box-shadow: 0px 0px 17px 0px var(--cor0);
 }
@@ -64,3 +69,76 @@ body{
 #discipline_content, ul, li{
     list-style: none;
 }
+
+.lessons-card{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background: var(--cor0);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 7px 0px var(--cor0);
+    width: 80%;
+    max-width: 700px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.lessons-card.show{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.lessons-card.z-index-remove{
+    z-index: -5;
+}
+
+.lessons-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: -16px;
+}
+
+.lesson-card{
+    background: var(--cor0);
+    color: var(--cor3);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.lessons-card h2{
+    width: 500px;
+    color: var(--cor3);
+    display: flex;
+}
+
+.lesson-card:hover {
+  transform: scale(1.05);
+  background: var(--cor1);
+}
+
+.lesson-card:active{
+    transform: scale(0.85);
+}
+
+.cancel-button{
+    margin: 0px;
+    background-color: var(--cor0);
+    border: none;
+    width: 23px;
+    height: 26px;
+    position: relative;
+    left: 634px;
+    top: -35px;
+}
+
+.cancel-button:active{
+    transform: scale(0.85);
+}
+
