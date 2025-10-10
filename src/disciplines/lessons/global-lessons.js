@@ -28,3 +28,19 @@ function redirect(n){
         feedbackAlert();
     }
 }
+
+function downloadPDF(){
+    const content = document.getElementById("content");
+    let h1 = document.querySelector(".lesson-discipline");
+
+    h1 = h1.textContent;
+
+    const options = {
+      margin: 10,
+      filename: h1,
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+    html2pdf().set(options).from(content).save();
+}

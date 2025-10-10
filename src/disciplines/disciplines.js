@@ -15,11 +15,11 @@ const lessonsData = {
         { title: "Aula 4", date: "17/10/2025", url: "lessons/Gestão Financeira e Contábil/aula4.html" },
     ],
     "Programação Orientada a Objetos II": [
-        { title: "Aula 1", date: "18/10/2025", url: "lessons/Probabilidade e Estatística/aula1.html" },
-    ],
-    "Probabilidade e Estatística": [
         { title: "Aula 1", date: "19/10/2025", url: "lessons/Programação Orientada a Objetos II/aula1.html"},
         { title: "Aula 2", date: "20/10/2025", url: "lessons/Programação Orientada a Objetos II/aula2.html"},
+    ],
+    "Probabilidade e Estatística": [
+        { title: "Aula 1", date: "18/10/2025", url: "lessons/Probabilidade e Estatística/aula1.html" },
     ],
     "Sistemas Operacionais": [
         { title: "Aula 1", date: "21/10/2025", url: "lessons/Sistemas Operacionais/aula1.html"},

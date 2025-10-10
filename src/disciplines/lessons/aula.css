@@ -32,3 +32,26 @@
 .format h1{
     color: var(--cor3);
 }
+
+.download-button{
+    width: 40px;
+    height: 40px;
+    transition: all 1s ease 0s;
+}
+
+.download-button-style{
+    border: none;
+    background-color: var(--cor4);
+    width: 20px;
+    height: 20px;
+    transition: all 1s ease 0s;
+}
+
+.download-button-style:hover{
+    box-shadow: 0px 0px 16px 3px var(--cor0);
+    cursor: pointer;
+}
+
+.download-button:active{
+    transform: scale(0.92);
+}
