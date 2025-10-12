@@ -19,7 +19,7 @@
 }
 
 body{
-    gap: 190px;
+    gap: 7%;
 }
 
 #disciplines_content{
@@ -39,7 +39,7 @@ body{
 
 .discipline-items{
     height: 80px;
-    width: 1000px;
+    width: 1050px;
     display: flex;
     flex-direction: column;
     gap: 45px;
@@ -50,7 +50,7 @@ body{
     top: 20px;
     font-size: 20px;
     height: 80px;
-    width: 1050px;
+    width: 103%;
     border-radius: 24px;
     background-color: var(--cor4);
     transition: all 1s ease 0s;
@@ -83,7 +83,7 @@ body{
     max-width: 700px;
     opacity: 0;
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 .lessons-card.show{
@@ -135,7 +135,7 @@ body{
     width: 23px;
     height: 26px;
     position: relative;
-    left: 634px;
+    left: 97%;
     top: -35px;
 }
 
@@ -143,3 +143,253 @@ body{
     transform: scale(0.85);
 }
 
+/* Celulares até 374px */
+@media (max-width: 374px) {
+  .discipline-item {
+    top: 1%;
+    left: -2%;
+    position: relative;
+    width: 24%;
+    font-size: 10px;
+    height: 71px;
+    text-align: center;
+  }
+
+  .discipline-item a {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .discipline-item i{
+    position: relative;
+    top: 18px;
+  }
+
+  .lessons-card h2 {
+    font-size: 16px;
+  }
+
+  .lesson-card {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .lessons-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .cancel-button {
+    left: 85%;
+    top: -25px;
+  }
+}
+
+/* Celulares de 375px até 424px */
+@media (min-width: 375px) and (max-width: 424px) {
+  .discipline-item {
+    top: 1%;
+    left: -2%;
+    position: relative;
+    width: 25%;
+    font-size: 10px;
+    height: 71px;
+    text-align: center;
+  }
+
+  .discipline-item a {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .discipline-item i{
+    position: relative;
+    top: 18px;
+  }
+
+  .lessons-card h2 {
+    font-size: 16px;
+  }
+
+  .lesson-card {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .lessons-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .cancel-button {
+    left: 85%;
+    top: -25px;
+  }
+}
+
+/* Celulares de 376 até 451px */
+@media (min-width: 376px) and (max-width: 451px) {
+  .discipline-item {
+    top: 1%;
+    left: -2%;
+    position: relative;
+    width: 27%;
+    font-size: 12px;
+    height: 71px;
+    text-align: center;
+  }
+
+  .discipline-item a {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .discipline-item i{
+    position: relative;
+    top: 25px;
+  }
+
+  .lessons-card h2 {
+    font-size: 16px;
+  }
+
+  .lesson-card {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .lessons-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .cancel-button {
+    left: 85%;
+    top: -25px;
+  }
+}
+
+/* Dispositivos até 765px */
+@media (min-width: 765px){
+    .discipline-item {
+      top: 0%;
+      left: -2%;
+      position: relative;
+      width: 60%;
+      font-size: 20px;
+      height: 72px;
+      text-align: center;
+  }
+
+  .discipline-item a {
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .discipline-item i{
+    position: relative;
+    top: 23px;
+  }
+
+  .lessons-card h2 {
+    font-size: 16px;
+  }
+
+  .lesson-card {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .lessons-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .cancel-button {
+    left: 85%;
+    top: -25px;
+  }
+
+}
+
+
+/*Dispositivos 1023px */
+@media (min-width: 1023px){
+    .discipline-item {
+      top: 0%;
+      left: -2%;
+      position: relative;
+      width: 85%;
+      font-size: 20px;
+      height: 72px;
+      text-align: center;
+  }
+
+  .discipline-item a {
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .discipline-item i{
+    position: relative;
+    top: 23px;
+  }
+
+  .lessons-card h2 {
+    font-size: 16px;
+  }
+
+  .lesson-card {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .lessons-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .cancel-button {
+    left: 85%;
+    top: -25px;
+  }
+
+}
+
+
+/*Dispositivos 1439px */
+@media (min-width: 1439px){
+    .discipline-item {
+      top: 0%;
+      left: -2%;
+      position: relative;
+      width: 122%;
+      font-size: 20px;
+      height: 72px;
+      text-align: center;
+  }
+
+  .discipline-item a {
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .discipline-item i{
+    position: relative;
+    top: 23px;
+  }
+
+  .lessons-card h2 {
+    font-size: 16px;
+  }
+
+  .lesson-card {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .lessons-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .cancel-button {
+    left: 85%;
+    top: -25px;
+  }
+
+}

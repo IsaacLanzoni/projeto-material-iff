@@ -67,7 +67,25 @@
     </nav>
 
     <main>
-        Em Breve...
+        <div class="format">
+            <h1>Configurações</h1>
+            <section class="config-section">
+                <h2>Tema</h2>
+            <div class="theme-options">
+                <button class="theme-btn" onclick="setTheme('light')">Claro ☀️</button>
+                <button class="theme-btn" onclick="setTheme('dark')">Escuro 🌙</button>
+            </div>
+            </section>
+            <section class="config-section">
+                <h2>Fonte</h2>
+                <select id="fontSelector" onchange="setFont(this.value)">
+                    <option value="'Roboto', sans-serif">Padrão (Roboto)</option>
+                    <option value="'Georgia', serif">Georgia</option>
+                    <option value="'Courier New', monospace">Courier New</option>
+                    <option value="'Poppins', sans-serif">Poppins</option>
+                </select>
+            </section>
+        </div>
     </main>
 </body>
 </html>

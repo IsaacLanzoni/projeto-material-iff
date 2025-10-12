@@ -1,0 +1,164 @@
+#config-content {
+  color: var(--cor3);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+.config-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: 75%;
+  background: var(--cor0);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  gap: 15px;
+}
+
+.config-section h2 {
+  left: 22%;
+  position: relative;
+  display: flex;
+  text-align: center;
+  line-height: 112px;
+}
+
+.theme-options {
+  left: -11%;
+  position: relative;
+  width: 59%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.theme-btn {
+  width: 118px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: var(--cor4);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.05);
+}
+
+select {
+  position: relative;
+  display: flex;
+  padding: 8px 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px 0px var(--cor0);
+  background-color: var(--cor4);
+  color: var(--cor3);
+  font-size: 16px;
+  margin: auto;
+}
+
+.format {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--cor4);
+  color: var(--cor3);
+  font-size: 14px;
+  padding: 20px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px 0px var(--cor3);
+  text-align: justify;
+  font-family: var(--main-font);
+  line-height: 1.8;
+  gap: 31px;
+  width: 45%;
+  margin: auto;
+}
+
+.format h1 {
+  color: var(--cor3);
+  text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+  .config-section {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .theme-options {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .format {
+    width: 80%;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  #config-content {
+    padding: 20px;
+  }
+
+  .config-section {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .theme-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  select {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .format {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .config-section h2 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .theme-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .theme-btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  select {
+    width: 90%;
+  }
+
+  .format {
+    width: 95%;
+    font-size: 13px;
+    gap: 20px;
+  }
+}
