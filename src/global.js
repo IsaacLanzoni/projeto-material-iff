@@ -30,16 +30,14 @@ function redirect(n){
 }
 
 
-// ====== Configurações de tema e fonte ======
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme") || "light";
-  const savedFont = localStorage.getItem("font") || "'Roboto', sans-serif";
+  const savedFont = localStorage.getItem("font") || "'Roboto'";
 
   setTheme(savedTheme);
   setFont(savedFont);
 
-  // Atualiza selects/botões se existirem
-  const fontSelect = document.getElementById("fontSelect");
+  const fontSelect = document.getElementById("fontSelector");
   if (fontSelect) fontSelect.value = savedFont;
 
   const themeToggle = document.getElementById("themeToggle");
@@ -48,27 +46,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// ====== Função para definir tema ======
+
 function setTheme(theme) {
   if (theme === "dark") {
-    document.documentElement.style.setProperty("--cor0", "#1E5128");
-    document.documentElement.style.setProperty("--cor1", "#A62C2B");
-    document.documentElement.style.setProperty("--cor2", "#D9D7D7");
-    document.documentElement.style.setProperty("--cor3", "#0D0C0C");
-    document.documentElement.style.setProperty("--cor4", "#145A44");
-    document.documentElement.style.setProperty("--bg-color", "#393E46");
-    document.documentElement.style.setProperty("--text-color", "#E5E5E5");
+    document.documentElement.style.setProperty("--layer-color", "#0D0D0B");
+    document.documentElement.style.setProperty("--layer-background-color", "#878C80");
+    document.documentElement.style.setProperty("--neutral-color", "#262621");
+    document.documentElement.style.setProperty("--background-color", "#BDBFAE");
+    document.documentElement.style.setProperty("--element-background-color", "#4F5954");
+    document.documentElement.style.setProperty("--text-color", "#E6E6E6");
   } else {
-    document.documentElement.style.setProperty("--cor0", "#2F9E41");
-    document.documentElement.style.setProperty("--cor1", "#CD191E");
-    document.documentElement.style.setProperty("--cor2", "#D9D7D7");
-    document.documentElement.style.setProperty("--cor3", "#D9D7D7");
-    document.documentElement.style.setProperty("--cor4", "#19655B");
-    document.documentElement.style.setProperty("--bg-color", "#F5F5F5");
+    document.documentElement.style.setProperty("--layer-color", "#2F9E41");
+    document.documentElement.style.setProperty("--layer-background-color", "#CD191E");
+    document.documentElement.style.setProperty("--neutral-color", "#0D0C0C");
+    document.documentElement.style.setProperty("--background-color", "#D9D7D7");
+    document.documentElement.style.setProperty("--element-background-color", "#19655B");
     document.documentElement.style.setProperty("--text-color", "#D9D7D7");
   }
 
-  document.body.style.backgroundColor = "var(--bg-color)";
+  document.body.style.backgroundColor = "var(--background-color)";
   document.body.style.color = "var(--text-color)";
   localStorage.setItem("theme", theme);
 
@@ -77,20 +73,20 @@ function setTheme(theme) {
     themeToggle.textContent = theme === "dark" ? "Tema Claro" : "Tema Escuro";
 }
 
-// ====== Função para alternar tema ======
+
 function toggleTheme() {
   const currentTheme = localStorage.getItem("theme") || "light";
   const newTheme = currentTheme === "light" ? "dark" : "light";
   setTheme(newTheme);
 }
 
-// ====== Função para definir fonte ======
+
 function setFont(font) {
-  document.body.style.fontFamily = font;
+  document.documentElement.style.setProperty("--main-font", font);
   localStorage.setItem("font", font);
 }
 
-// ====== Listener de mudança de fonte (para o <select>) ======
+
 function changeFont(selectElement) {
   const selectedFont = selectElement.value;
   setFont(selectedFont);

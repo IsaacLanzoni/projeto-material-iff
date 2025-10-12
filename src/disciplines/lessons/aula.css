@@ -1,36 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-:root {
-
-    --cor0: #2F9E41;
-    --cor1: #CD191E;
-    --cor2: #0D0C0C;
-    --cor3: #D9D7D7;
-    --cor4: #19655B;
-    --cor5: #F3997B;
-
-    --main-font: 'Roboto';
-    --secondary-font: 'Times New Roman', Georgia, Times, serif;
-}
-
 .format{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--cor4);
-    color: var(--cor3);
+    background-color: var(--element-background-color);
+    color: var(--text-color);
     font-size: 14px;
     padding: 20px;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0px 0px 7px 0px var(--cor0);
+    box-shadow: 0px 0px 7px 0px var(--layer-color);
     text-align: justify;
     font-family: var(--main-font);
     line-height: 28px;
 }
 
 .format h1{
-    color: var(--cor3);
+    color: var(--text-color);
 }
 
 .download-button{
@@ -41,14 +26,14 @@
 
 .download-button-style{
     border: none;
-    background-color: var(--cor4);
+    background-color: var(--element-background-color);
     width: 20px;
     height: 20px;
     transition: all 1s ease 0s;
 }
 
 .download-button-style:hover{
-    box-shadow: 0px 0px 16px 3px var(--cor0);
+    box-shadow: 0px 0px 16px 3px var(--layer-color);
     cursor: pointer;
 }
 

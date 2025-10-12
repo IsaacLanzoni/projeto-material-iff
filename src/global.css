@@ -1,37 +1,44 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;1,600&display=swap');
 
 :root {
 
-    --cor0: #2F9E41;
-    --cor1: #CD191E;
-    --cor2: #0D0C0C;
-    --cor3: #D9D7D7;
-    --cor4: #19655B;
-    --cor5: #F3997B;
+    --layer-color: #2F9E41;
+    --layer-background-color: #CD191E;
+    --neutral-color: #0D0C0C;
+    --background-color: #D9D7D7;
+    --element-background-color: #19655B;
+    --text-color: #D9D7D7;
 
-    --main-font: 'Roboto';
-    --secondary-font: Georgia, 'Times New Roman', Times, serif;
+    --main-font: 'Roboto', 'Newsreader', 'Open Sans', 'Rubik';
+    --first-font: 'Roboto';
+    --second-font: 'Newsreader';
+    --third-font: 'Open Sans';
+    --fourth-font: 'Rubik';
+    
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--main-font), var(--secondary-font);
+    font-family: var(--main-font);
 }
 
 body {
   color: var(--text-color);
-  font-family: var(--main-font), var(--secondary-font);
+  font-family: var(--main-font);
   display: flex;
   min-height: 100vh;
-  background-color: var(--cor3);
+  background-color: var(--background-color);
 }
 
 main {
-     flex: 1;
+  flex: 1;
   padding: 20px;
   margin-left: 0;
   overflow-y: auto;
@@ -41,7 +48,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--cor4) ;
+    background-color: var(--element-background-color);
     height: auto;
     min-height: 100vh;
     border-radius: 0px 18px 18px 0px;
@@ -75,7 +82,7 @@ main {
 }
 
 #user_infos span:last-child {
-    color: var(--cor3);
+    color: var(--text-color);
     font-size: 12px;
 }
 
@@ -93,12 +100,12 @@ main {
 }
 
 .side-item.active {
-    background-color: var(--cor0);
+    background-color: var(--layer-color);
 }
 
 .side-item:hover:not(.active),
 #logout_btn:hover {
-    background-color: var(--cor1);
+    background-color: var(--layer-background-color);
 }
 
 .side-item a {
@@ -106,11 +113,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--cor3);
+    color: var(--text-color);
 }
 
 .side-item.active a {
-    color: var(--cor1);
+    color: var(--text-color);
 }
 
 .side-item a i {
@@ -122,7 +129,7 @@ main {
 }
 
 #logout {
-    border-top: 1px solid var(--cor4);
+    border-top: 1px solid var(--element-background-color);
     padding: 12px;
 }
 
@@ -137,15 +144,15 @@ main {
     text-align: start;
     cursor: pointer;
     background-color: transparent;
-    color: var(--cor3);
+    color: var(--text-color);
 }
 
 #open_btn {
     position: absolute;
     top: 30px;
     right: -10px;
-    background-color: var(--cor1);
-    color: var(--cor3);
+    background-color: var(--layer-background-color);
+    color: var(--text-color);
     border-radius: 100%;
     width: 20px;
     height: 20px;
@@ -183,8 +190,4 @@ main {
 #sidebar.open-sidebar .side-item a {
     justify-content: flex-start;
     gap: 14px;
-}
-
-h1{
-    color:var(--cor2)
 }
