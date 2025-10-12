@@ -2,10 +2,6 @@ document.getElementById('open_btn').addEventListener('click', function () {
   document.getElementById('sidebar').classList.toggle('open-sidebar');
 });
 
-function feedbackAlert(){
-  alert("Por enquanto essa função não está disponivel, o ADM ficou com preguiça de fazer, mas em breve vai implementar");
-}
-
 function redirect(n){
   if(n == 1){
       showLoading();
@@ -24,8 +20,6 @@ function redirect(n){
       setTimeout(() => {
           window.location.href = "../config/config.html";
       }, 3000);
-  } else if(n == 5){
-      //
   }
 }
 
