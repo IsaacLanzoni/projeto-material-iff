@@ -56,6 +56,8 @@
 }
 
 select {
+  text-align: center;
+  width: 36%;
   left: 20px;
   position: relative;
   display: flex;

@@ -104,7 +104,7 @@ main {
 }
 
 .side-item:hover:not(.active),
-#logout_btn:hover {
+#feedback_btn:hover {
     background-color: var(--layer-background-color);
 }
 
@@ -128,12 +128,12 @@ main {
     height: 20px;
 }
 
-#logout {
+#feedback {
     border-top: 1px solid var(--element-background-color);
     padding: 12px;
 }
 
-#logout_btn {
+#feedback_btn {
     border: none;
     padding: 12px;
     font-size: 14px;
