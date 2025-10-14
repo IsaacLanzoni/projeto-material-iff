@@ -380,3 +380,50 @@ body{
   }
 
 }
+
+/*Dispositivos 1439px */
+@media (min-width: 1920px){
+
+body{
+  gap: 3%;
+}
+
+.discipline-item {
+  top: 0%;
+  left: 1%;
+  position: relative;
+  width: 161%;
+  font-size: 29px;
+  height: 141%;
+  text-align: center;
+}
+
+.discipline-item a {
+  flex-direction: column;
+  gap: 49px;
+}
+
+.discipline-item i{
+  position: relative;
+  top: 36px;
+}
+
+.lessons-card h2 {
+  font-size: 16px;
+}
+
+.lesson-card {
+  font-size: 13px;
+  padding: 8px;
+}
+
+.lessons-grid {
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+.cancel-button {
+  left: 96%;
+  top: -25px;
+}
+
+}
